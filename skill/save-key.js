@@ -26,7 +26,7 @@ module.exports = class SkillSaveKey {
         }
     }
 
-    finish(bot, event, context, resolve, reject) => {
+    finish(bot, event, context, resolve, reject) {
         let keychain = cache.get(`keychain_${bot.extract_sender_id()}`);
         if (!keychain) keychain = [];
 
