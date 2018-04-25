@@ -32,7 +32,7 @@ module.exports = class SkillSaveKey {
             }
         }
         return bot.reply(message).then((response) => {
-            return resolve(;)
+            return resolve()
         })
     }
 }
