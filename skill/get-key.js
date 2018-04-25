@@ -17,7 +17,10 @@ module.exports = class SkillSaveKey {
     finish(bot, event, context, resolve, reject) {
         let keychain = cache.get(`keychain_${bot.extract_sender_id()}`);
 
-        let key = keychain.find(key => key.service === context.confirmed.service);
+        let key;
+        if (keychain){
+            key = keychain.find(key => key.service === context.confirmed.service);
+        }
 
         let message;
         if (key){
