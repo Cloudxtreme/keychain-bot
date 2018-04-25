@@ -4,6 +4,8 @@ const cache = require("memory-cache");
 
 module.exports = class SkillSaveKey {
     constructor(){
+        this.clear_context_on_finish = true;
+
         this.required_parameter = {
             service: {
                 message_to_confirm: {
