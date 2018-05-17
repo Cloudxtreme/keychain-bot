@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.1",
-    "bot-express": "^0.2.21",
+    "bot-express": "^0.3.9",
     "debug": "^3.1.0",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
